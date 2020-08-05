@@ -6,7 +6,6 @@ def Gini(a,b):
     if a==0 and b==0:
         return 0
     else:
-        print(1-(a/(a+b))**2-(b/(a+b))**2)
         return (1-(a/(a+b))**2-(b/(a+b))**2)
 
 
