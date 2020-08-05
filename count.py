@@ -13,8 +13,8 @@ def Gini(a,b):
 def best_axis_cut(dataset,column,target):
     final_gini_low = 1000
     final_gini_upp = 1000
-    key_1 = dataset.target.unique()[0]
-    key_2 = dataset.target.unique()[1]
+    key_1 = dataset[target].unique()[0]
+    key_2 = dataset[target].unique()[1]
     #column_points = column_points[float(item) for item in dataset[column]]
     for i in dataset[column]:
         low = dataset[dataset[column]<=i]
